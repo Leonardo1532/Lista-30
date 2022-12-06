@@ -2,18 +2,18 @@
 // ou negativos, depois de popular esse array você deve substituir os valores
 // POSITIVOS pelo número 1 e os negativos por -1.
 
-// let numeros: number[] = []
-// for (let index = 0; index < 5; index++) {
-//     let numero = parseInt(prompt("Insira um número positivo ou negativo"))
-//     numeros.push(numero)
+let numeros: number[] = []
+for (let index = 0; index < 5; index++) {
+    let numero = parseInt(prompt("Insira um número positivo ou negativo"))
+    numeros.push(numero)
 
-//     if (numeros[index] > 0) {
-//         numeros[index] = 1
-//     } else if (numeros[index] < 0) {
-//         numeros[index] = -1
-//     }
-// }
-// console.log(numeros)
+    if (numeros[index] > 0) {
+        numeros[index] = 1
+    } else if (numeros[index] < 0) {
+        numeros[index] = -1
+    }
+}
+console.log(numeros)
 
 // 2. Faça um algoritmo que peça para o usuário digitar 5 números e salve em um array,
 // porém, se o usuário digitar um número que já foi inserido, o seu programa deve
@@ -21,7 +21,6 @@
 
 let numeros2 = []
 let valido = false
-
 
 for (let index = 0; index < 5; index++) {
     while (valido == false) {
@@ -38,10 +37,6 @@ for (let index = 0; index < 5; index++) {
 }
 console.log(numeros2)
 
-
-
-
-
 // 3. Crie um algoritmo com dois vetores e os preencha com números inteiros e
 // positivos, o usuário deve dizer quando não quer mais inserir valores mas os vetores
 // devem ter a mesma quantidade de números. Depois crie um terceiro vetor que irá
@@ -54,34 +49,34 @@ console.log(numeros2)
 // Ex.: entrada - array[2,6,8,0,6,4,3,2,0,7]
 // saída - array[2,6,8,6,4,3,2,7]
 
-// let arrayA = []
-// let arrayB = []
-// let arrayC = []
+let arrayA = []
+let arrayB = []
+let arrayC = []
 
-// let continuar = true
-// while (continuar == true) {
-//     let numeroA = parseInt(prompt("Insira um número para o Array A"))
-//     arrayA.push(numeroA)
-//     let numeroB = parseInt(prompt("Insira um número para o Array B"))
-//     arrayB.push(numeroB)
+let continuar = true
+while (continuar == true) {
+    let numeroA = parseInt(prompt("Insira um número para o Array A"))
+    arrayA.push(numeroA)
+    let numeroB = parseInt(prompt("Insira um número para o Array B"))
+    arrayB.push(numeroB)
 
-//     let desejaContinuar = prompt("Deseja continuar inserindo valores nos vetores? s ou n")
-//     if (desejaContinuar != "s") {
-//         continuar = false
-//     }
-// }
+    let desejaContinuar = prompt("Deseja continuar inserindo valores nos vetores? s ou n")
+    if (desejaContinuar != "s") {
+        continuar = false
+    }
+}
 
-// for (let index = 0; index < arrayA.length; index++) {
-//     if (arrayA[index] == arrayB[index]) {
-//         arrayC.push(arrayA[index])
-//     }
-//     if (arrayA[index] % 2 != 0) {
-//         arrayC.push(arrayA[index])
-//     }
-//     if (arrayB[index] % 2 != 0) {
-//         arrayC.push(arrayB[index])
-//     }
-// }
-// console.log(arrayA)
-// console.log(arrayB)
-// console.log(arrayC)
+for (let index = 0; index < arrayA.length; index++) {
+    if (arrayA[index] == arrayB[index]) {
+        arrayC.push(arrayA[index])
+    }
+    if (arrayA[index] % 2 != 0) {
+        arrayC.push(arrayA[index])
+    }
+    if (arrayB[index] % 2 != 0) {
+        arrayC.push(arrayB[index])
+    }
+}
+console.log(arrayA)
+console.log(arrayB)
+console.log(arrayC)
